@@ -8,7 +8,7 @@ if kids == "yes"
   puts "What will you name your children?"
   names = gets.chomp!
 
-if age > 30
+if age.to_i > 30
   puts "Are you married?"
   married = gets.chomp!.downcase
 
