@@ -13,11 +13,20 @@ kids = gets.chomp!.downcase
 
 # If the user says yes to children ask for the childrens names
 if kids == "yes"
+  # puts a string
+  puts "How many kids?"
+  kids_size = gets.chomp.to_i
+  # get input
+  # this might need to be a loop
+  1.upto kids_size do
   puts "What will you name your children?"
   names = gets.chomp!
+  puts "Cool I like #{names} as your kids' names!"
+end
 
 # If the user is over 30 ask if they're married
-  if age.to_i > 30
+# can put the puts question and if age > 30 on same line
+if age.to_i > 30
     puts "Are you married?"
     married = gets.chomp!.downcase
 
