@@ -14,7 +14,11 @@ if age.to_i > 30
 
   if married == "no"
     puts "Do you ever plan on getting married?"
-    married = gets.chomp!.downcase
+    get_married = gets.chomp!.downcase
+
+  if get_married == "yes"
+    puts "That is great I hope things work out with us!!"
+  end
 end
 end
 end
